@@ -14,7 +14,6 @@ Parameters:
     Type: String
     Description: Name of the KeyPair used for EC2 instances
     ConstraintDescription: 'Must be the name of an existing EC2 KeyPair.'
-    Default: shiva-test-key-pair
 
 # Management Network CIDR
   RemoteManagementCIDR:
@@ -134,7 +133,7 @@ Parameters:
     Type: String
     AllowedPattern: ^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$|^$
     ConstraintDescription: Must be a valid S3 Bucket name or left blank for no Bootstrap.
-    Default: aws-jam-challenge-resources
+    Default: __source_s3_bucket_name__
 
   SourceS3BucketPath:
     Type: String
