@@ -1,5 +1,5 @@
 
-S3_BUCKET_NAME="panw-aws-jam-resources-$(uuidgen)"
+S3_BUCKET_NAME="panw-aws-resources-$(uuidgen)"
 S3_FOLDER_NAME="panw-vmseries-gwlb/"
 
 echo "Creating new S3 bucket ${S3_BUCKET_NAME} for sourcing the CFTs"
